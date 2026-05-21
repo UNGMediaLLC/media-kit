@@ -421,6 +421,87 @@
       border: 2px solid var(--gold-dim);
     }
 
+    /* ── Mobile ── */
+    @media (max-width: 640px) {
+      html { font-size: 15px; }
+
+      .hero {
+        padding: 28px 24px 32px;
+      }
+
+      .hero-logo {
+        font-size: clamp(44px, 13vw, 64px);
+        letter-spacing: 2px;
+      }
+
+      .hero-tagline {
+        font-size: clamp(16px, 4.5vw, 20px);
+      }
+
+      section {
+        padding: 40px 24px;
+      }
+
+      .contact-section {
+        padding: 40px 24px;
+      }
+
+      /* Bio: stack image above text */
+      .bio-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .bio-image-wrap {
+        max-width: 200px;
+        margin: 0 auto;
+      }
+
+      /* Client grid: single column */
+      .client-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Differentiators: single column */
+      .diff-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Pricing: single column */
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      /* Contact: stack items */
+      .contact-row {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      /* Work section flex layout: stack */
+      .work-layout {
+        flex-direction: column !important;
+      }
+
+      .work-frame {
+        width: 100% !important;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      blockquote {
+        padding: 18px 20px;
+      }
+
+      blockquote p {
+        font-size: 17px;
+      }
+
+      .pricing-row {
+        flex-wrap: wrap;
+        gap: 4px;
+      }
+    }
+
     /* ── Print ── */
     @media print {
       * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
